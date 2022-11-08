@@ -1,0 +1,24 @@
+* {
+    box-sizing: border-box;
+}
+/* color pallette from colorhunt.co */
+
+:root {
+    --darkestblue: #002b5b;
+    --darkerblue: #2b4865;
+    --lighterblue: #256d85;
+    --lightestblue: #8fe3cf;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    color: var(--darkestblue);
+    background-color: var(--lightestblue);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#profile {
+    width: 200px;
+    float: left;
+}
