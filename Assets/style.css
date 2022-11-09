@@ -19,11 +19,7 @@ body {
 }
 
 /* profile image */
-#profile {
-    width: 100px;
-    float: left;
-    position: relative;
-}
+
 
 /* header */
 header{
@@ -39,7 +35,7 @@ header{
 }
 
 header h1 {
-    color: var(--darkestblue);
+    color: var(--lightestblue);
     margin-right: 50px;
     font-size: 50px;
 }
@@ -73,17 +69,238 @@ nav a{
 
 #banner h2 {
     padding: 0 15px 15px 0;
+    font-size: 25px;
+}
+
+.layout {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.sections {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+
+
+
+#about {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 25px;
+    border-top: solid var(--darkestblue) 2px;
+}
+
+#aboutdiv {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    /* justify-content: space-between; */
+    align-items: flex-start;
+    /* flex: 0 0 50%; */
+    width: 35%;
+
+}
+#profile {
+    /* float: left; */
+    display: flex;
+    flex-direction: row;
+    width: 200px;
+    margin-left: 10px;
+    border-radius: 25px;
+    box-shadow: 10px 5px #2b4865;
+    
+}
+
+
+
+#about h2 {
+    font-size: 30px;
+    border-right: solid var(--darkestblue) 2px;
+    padding-right: 100px;
+    margin: auto;
+    
+
+}
+
+#about p {
+    display: flex;
+    justify-content: center;
+    flex: 0 0 50%;
+
+    padding-left: 25px;
+    width: 65%;
+    margin: auto;
+    font-size: 25px; */
+
+} 
+
+#work {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+    padding-top: 50px;
+
+}
+
+#projects {
+    display: flex;
+    flex: 0 0 50%
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 65%;
+}
+
+#work h2 {
+    font-size: 30px;
+    border-right: solid var(--darkestblue) 2px;
+    padding-right: 100px;
+    margin: auto;
+}
+.items {
+    padding-left: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    min-height: 150px;
+    max-height: 150px;
+    flex-basis: calc(50% - 16px);
+    background-size: 100%;
+    text-decoration: none;
+    border: solid var(--lightestblue) 5px;
+}
+
+.items div {
+    padding: 20px;
+}
+
+.items h3 {
+    font-size: 25px;
+    color: var(--lightestblue);
+}
+
+#code {
+    background-image: url('./code.jpg');
+    min-height: 300px;
+    flex-basis: 100%;
+    margin:5px;
+}
+
+#html {
+    background-image: url('./tag.jpg');
+    margin:5px;
+    
+}
+
+#css {
+    background-image: url('./CSS.jpg');
+    margin:5px;
+}
+
+#javascript {
+    background-image: url('./javascript.jpg');
+    margin:5px;
+}
+
+#pro {
+    background-image: url('./screen.jpg');
+    margin:5px;
 }
 
 #contact {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    margin-top: 25px;
 }
 
-#contact a {
-    text-decoration: none;
-    color: var(--darkestblue);
+#contact h2 {
+    font-size: 30px;
+    border-right: solid var(--darkestblue) 2px;
+    padding-right: 100px;
+    margin: auto;
+}
 
+#contact div {
+    display: flex;
+    flex: 0 0 50%
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: space-between;
+    width: 65%;
+    padding-left: 25px;
+
+}
+#contact a {
+    text-align: center;
+    text-decoration: none;
+    color: var(--lightestblue);
+    background-color: var(--darkerblue);
+    font-size: 25px;
+    border-radius: 5px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border: solid 2px var(--darkestblue);
+    margin-right: 15px;
+}
+
+@media screen and (max-width: 980px) {
+    header {
+        justify-content: center;
+        text-align: center;
+    }
+
+    header h1 {
+        width: 100%;
+    }
+
+    header nav {
+        justify-content: center;
+    }
+
+    section img {
+        width: 100%;
+    }
+
+    section h2 {
+        flex: 0 0 100%;
+        border-right: none;
+        border-bottom: 2px solid var(--darkestblue);
+        text-align: left;
+    }
+
+    section div {
+        flex: 0 0 100%;
+    }
+
+    section div h2{
+        text-align: left;
+    }
+
+    #am {
+        text-align: left;
+        align-items: flex-start;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    #contact div {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #about p {
+        align-items: flex-start;
+        margin-left: 0;
+    }
 }
