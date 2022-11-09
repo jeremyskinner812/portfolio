@@ -9,7 +9,7 @@
     --lighterblue: #256d85;
     --lightestblue: #8fe3cf;
 }
-
+/* body background and font */
 body {
     margin: 0;
     padding: 0;
@@ -39,7 +39,7 @@ header h1 {
     margin-right: 50px;
     font-size: 50px;
 }
-
+/* nav bar */
 nav {
     display: flex;
     flex-direction: row;
@@ -53,7 +53,7 @@ nav a{
     border-bottom: 2px solid var(--darkestblue);
 
 }
-
+/* gradient banner */
 #banner {
     background-image: url('gradientbanner.jpg');
     background-size: cover;
@@ -71,7 +71,7 @@ nav a{
     padding: 0 15px 15px 0;
     font-size: 25px;
 }
-
+/* positioning for main */
 .layout {
     max-width: 100%;
     margin-left: auto;
@@ -86,7 +86,7 @@ nav a{
 }
 
 
-
+/* about me  */
 #about {
     display: flex;
     flex-wrap: wrap;
@@ -95,7 +95,7 @@ nav a{
     padding-top: 25px;
     border-top: solid var(--darkestblue) 2px;
 }
-
+/* container for header and image */
 #aboutdiv {
     display: flex;
     flex-wrap: wrap;
@@ -106,6 +106,7 @@ nav a{
     width: 35%;
 
 }
+/* profile image */
 #profile {
     /* float: left; */
     display: flex;
@@ -139,7 +140,7 @@ nav a{
     font-size: 25px; */
 
 } 
-
+/* projects section */
 #work {
     display: flex;
     flex-wrap: wrap;
@@ -164,6 +165,7 @@ nav a{
     padding-right: 100px;
     margin: auto;
 }
+/* styling for project boxes */
 .items {
     padding-left: 25px;
     display: flex;
@@ -185,7 +187,7 @@ nav a{
     font-size: 25px;
     color: var(--lightestblue);
 }
-
+/* images for projects */
 #code {
     background-image: url('./code.jpg');
     min-height: 300px;
@@ -214,6 +216,7 @@ nav a{
     margin:5px;
 }
 
+/* contact section */
 #contact {
     display: flex;
     flex-wrap: wrap;
@@ -253,6 +256,7 @@ nav a{
     margin-right: 15px;
 }
 
+/* dynamics for screen size */
 @media screen and (max-width: 980px) {
     header {
         justify-content: center;
