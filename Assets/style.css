@@ -104,15 +104,12 @@ nav a{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    /* justify-content: space-between; */
     align-items: flex-start;
-    /* flex: 0 0 50%; */
     width: 35%;
 
 }
 /* profile image */
 #profile {
-    /* float: left; */
     display: flex;
     flex-direction: row;
     width: 200px;
