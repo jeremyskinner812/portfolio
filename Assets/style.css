@@ -9,6 +9,10 @@
     --lighterblue: #256d85;
     --lightestblue: #8fe3cf;
 }
+/* scroll behavior */
+html {
+	scroll-behavior: smooth;
+}
 /* body background and font */
 body {
     margin: 0;
